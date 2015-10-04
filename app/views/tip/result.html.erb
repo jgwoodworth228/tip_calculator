@@ -2,8 +2,9 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h3>Add a tip of $ to bring your total amount to $</h3>
-        <h3>Each person tips: $</h3>
+        <h3>The total bill is <%= @amount%> and we want to add a <%= @tip%>% tip.</h3>
+        <h3>We added a total tip of $<%= @tip_total%> to the bill.</h3>
+        <h3>Each person tips $<%= @tip_share%> which brings your total amount to $<%= @total%></h3>
       </div>
     </div>
   </div>
