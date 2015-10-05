@@ -2,9 +2,9 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h3>The total bill is $<%= @amount%> and we want to add a <%= @tip%>% tip.</h3>
-        <h3>We will add a total tip of $<%= @tip_total%> to the bill.</h3>
-        <h3>Each person will owe $<%= @tip_share%> for the tip which brings your portion of the bill and tip to $<%= @total%></h3>
+        <h3>The total bill is $<%= @tip_calculator.get_bill_amount %> and we want to add a <%= @tip_calculator.get_tip %>% tip.</h3>
+        <h3>We will add a total tip of $<%= @tip_calculator.get_tip_amount %> to the bill.</h3>
+        <h3>Each person will owe $<%= @tip_calculator.get_tip_share%> for the tip which brings your portion of the bill and tip to $<%= @tip_calculator.get_share_total%></h3>
       </div>
     </div>
   </div>
